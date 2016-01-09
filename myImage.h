@@ -34,33 +34,33 @@ public:
 
 
     Error error;
-	BusManager busMgr;
-	PGRGuid guid;
-	Camera cam;
-	int numImage;
-	int numBegin;
-	Format7ImageSettings format;
-	int width = 1280;
-	int height = 960;
-	Image rawImage;
-	Mat imageLeft;
+    BusManager busMgr;
+    PGRGuid guid;
+    Camera cam;
+    int numImage;
+    int numBegin;
+    Format7ImageSettings format;
+    int width = 1280;
+    int height = 960;
+    Image rawImage;
+    Mat imageLeft;
     Mat imageMid;
     Mat imageRight;
     Mat imageLeft_rec;
     Mat imageMid_rec;
     Mat imageRight_rec;
-	unsigned int fps = 480; // 480 means one frame per second
+    unsigned int fps = 480; // 480 means one frame per second
 
 
-	bool success = true;
-	char basename[256];
-	string dir = "2015_05_12_test_fps1";
-	string imgfilename;
+    bool success = true;
+    char basename[256];
+    string dir = "2015_05_12_test_fps1";
+    string imgfilename;
 
 
 
-	myImage(int numImage, int numBegin);
-	~myImage(){};
+    myImage(int numImage, int numBegin);
+    ~myImage(){};
     void ImageCapture();
     void ImageSeparate();
     void getRecParameter();
